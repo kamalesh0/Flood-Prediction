@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>FloodML</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Favicons -->
+  <link
+          href="{{ url_for('static', filename='img/favicon-2.png') }}"
+          rel="icon"
+  />
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+  <!-- Google Fonts -->
+  <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+          rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS File -->
+  <link
+          href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}"
+          rel="stylesheet"
+  />
+
+  <!-- Libraries CSS Files -->
+  <link
+          href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}"
+          rel="stylesheet"
+  />
+  <link
+          href="{{ url_for('static', filename='lib/animate/animate.min.css') }}"
+          rel="stylesheet"
+  />
+  <link
+          href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}"
+          rel="stylesheet"
+  />
+  <link
+          href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}"
+          rel="stylesheet"
+  />
+  <link
+          href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}"
+          rel="stylesheet"
+  />
+  <!-- Main Stylesheet File -->
+  <link
+          href="{{ url_for('static', filename='css/style.css') }}"
+          rel="stylesheet"
+  />
+</head>
+
+<body>
+<!--==========================
+Header
+============================-->
+<header id="header">
+  <div id="topbar">
+    <div class="container">
+      <div class="social-links">
+        <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="logo float-left">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <h1 class="text-light">
+        <a href="#intro" class="scrollto"><span>FloodML</span></a>
+      </h1> -->
+      <a href="#header" class="scrollto"
+      ><img
+              style="margin-top: -5px; min-height: 50px;"
+              src="{{ url_for('static', filename='img/logo1.png') }}"
+              alt=""
+              class="img-fluid"
+      /></a>
+    </div>
+
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="plots.html">Plots</a></li>
+        <li><a href="heatmaps.html">Heatmaps</a></li>
+        <li><a href="satellite.html">Predicted Image</a></li>
+        <!--<li><a href="predicts.html">Predict</a></li>-->
+      </ul>
+    </nav>
+    <!-- .main-nav -->
+  </div>
+</header>
+<!-- #header -->
+
+<!--==========================
+Intro Section
+============================-->
+<section id="intro" class="clearfix">
+  <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center">
+      <div class="col-md-5 intro-info order-md-first order-last" style="background-color: transparent;padding-right:50px;">
+        <!-- <h2 style="color:#00BFFF;">FloodML</h2> -->
+        <a href="#header" class="scrollto"
+        ><img
+                style="margin-top: 0px; max-height: 150px;"
+                src="{{ url_for('static', filename='img/logo1.png') }}"
+                alt=""
+                class="img-fluid"
+        /></a>
+        <h4 style="padding-top:30px;padding-left:10px;line-height: 40px;">Forecasting the Extent of Inundation Corresponding to Predicted Flood Levels is Crucial for Effective Disaster Preparedness and Response</h4>
+        <br />
+
+      </div>
+
+      <div class="col-md-7 intro-img order-md-last order-first" style="background-color: transparent;">
+        <!-- <img
+          src="{{ url_for('static', filename='img/er.png') }}"
+          alt=""
+          class="img-fluid"
+        /> -->
+        <iframe width="650" height="450" src="https://www.youtube.com/embed/4PXj7bOD7IY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- #intro -->
+
+<main id="main">
+  <!--==========================
+  About Us Section
+============================-->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <div class="about-img">
+            <img
+                    src="{{ url_for('static', filename='img/images.jpg') }}"
+                    alt=""
+            />
+          </div>
+        </div>
+
+        <div class="col-lg-7 col-md-6">
+          <div class="about-content">
+            <h2>About Flood Inundation</h2>
+            <h6>
+              It gives importance of forecasting flood extents based on predicted river levels for effective disaster preparedness.
+            </h6>
+            <p>
+              Floods are one of the most dangerous and frequent natural
+              disasters in the world.
+            </p>
+            <p>
+              Suggests a Focus on Predicting the Area that will be affected by Flooding Based on Forecasted Water Levels in a River
+            </p>
+            <p>
+              It allows for timely evacuation, targeted emergency response, and resource allocation, ultimately minimizing loss of life and
+              property damage during flood events. Then, we display this information in an interactive graphical format,
+              making the information compelling and easy to understand for people and governments alike.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #about -->
+
+  <!--==========================
+  Services Section
+============================-->
+  <section id="services" class="section-bg">
+    <div class="container">
+
+
+      <div class="row">
+        <div
+                class="col-md-6 col-lg-3 wow bounceInUp"
+                data-wow-duration="1.4s"
+        >
+          <div class="box" style="height: 320px;">
+            <div class="icon" style="background: #fceef3;">
+              <i
+                      class="ion-ios-analytics-outline"
+                      style="color: #ff689b;"
+              ></i>
+            </div>
+            <h4 class="title"><a href="plots.html">View Plots</a></h4>
+            <p class="description">
+              On our website, you can view plots showing flood prediction,
+              precipitation analysis, and damage analysis.
+            </p>
+          </div>
+        </div>
+        <div
+                class="col-md-6 col-lg-3 wow bounceInUp"
+                data-wow-duration="1.4s"
+        >
+          <div class="box" style="height: 320px;">
+            <div class="icon" style="background: #fff0da;">
+              <i
+                      class="ion-ios-bookmarks-outline"
+                      style="color: #e98e06;"
+              ></i>
+            </div>
+            <h4 class="title"><a href="heatmaps.html">View Heatmaps</a></h4>
+            <p class="description">
+              Our website also displays interactive heatmaps sharing various realtime data on floods.
+            </p>
+          </div>
+        </div>
+
+        <div
+                class="col-md-6 col-lg-3 wow bounceInUp"
+                data-wow-delay="0.1s"
+                data-wow-duration="1.4s"
+        >
+          <div class="box" style="height: 320px;">
+            <div class="icon" style="background: #eafde7;">
+              <i
+                      class="ion-ios-speedometer-outline"
+                      style="color: #41cf2e;"
+              ></i>
+            </div>
+            <h4 class="title"><a href="satellite.html">Satellite Images</a></h4>
+            <p class="description">
+              <!--   We analyzed data from NASA's GPM Project, and displayed georeferenced plots for sevaral cities. -->
+              Our website allows you to Show Image as floods Risk area using Historical data.
+            </p>
+          </div>
+        </div>
+
+        <div
+                class="col-md-6 col-lg-3 wow bounceInUp"
+                data-wow-delay="0.1s"
+                data-wow-duration="1.4s"
+        >
+          <div class="box" style="height: 320px;">
+            <div class="icon" style="background: #e6fdfc;">
+              <i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i>
+            </div>
+            <h4 class="title"><a href="..">Future Work</a></h4>
+            <p class="description">
+              Lastly, our website wants to predict floods using Real time through our machine learning algorithm.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #services -->
+
+  <!--==========================
+  Why Us Section
+============================-->
+  <section id="why-us" class="wow fadeIn">
+    <div class="container">
+      <div class="row counters">
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">25</span>
+          <p>Percent of deaths from natural disasters attributed to floods</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">2.3</span>
+          <p>Billion people affected by floods in the last 2 decades</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">40</span>
+          <p>Billion dollars in damages worldwide annually</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">1</span>
+          <p>Million people were displaced in India in 2019 alone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+  Call To Action Section
+============================-->
+  <!-- <section id="call-to-action" class="wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 text-center text-lg-left">
+          <h3 class="cta-title">Call To Action</h3>
+          <p class="cta-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt
+            mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-lg-3 cta-btn-container text-center">
+          <a class="cta-btn align-middle" href="#">Call To Action</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- #call-to-action -->
+
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/jquery/jquery-migrate.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/mobile-nav/mobile-nav.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{{ url_for('static', filename='contactform/contactform.js') }}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
